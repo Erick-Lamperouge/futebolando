@@ -60,7 +60,7 @@ def main():
             outname = f"{slug}.md"
             outpath = os.path.join(POSTS_DIR, outname)
             with open(outpath, 'w', encoding='utf-8') as f:
-                frontmatter.dump(post, f)
+                f.write(frontmatter.dumps(post))
             os.remove(path)
             print(f"Publicado: {outpath}")
             changed = True
