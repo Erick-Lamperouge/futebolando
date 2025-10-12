@@ -1,0 +1,51 @@
+name: Build & Deploy Pelican
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "0 12 * * *"  # todos os dias às 12:00 UTC (09:00 em America/Recife)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+      - name: Publicar posts agendados
+        run: python publish.py
+        env:
+          GITHUB_ACTIONS: "true"
+      - name: Gerar site (Pelican)
+        run: pelican content -o output -s pelicanconf.py
+      - name: Upload artifact para Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "./output"
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy para GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
