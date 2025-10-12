@@ -1,6 +1,6 @@
 ---
 category: Geral
-date: 2025-10-11 23:17
+date: 2025-10-12 09:17
 summary: Este é um post de teste que será publicado automaticamente quando chegar
   a data/hora definida em `publish_on`.
 tags:
