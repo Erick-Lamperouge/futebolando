@@ -6,3 +6,4 @@ adsense_client_id: ""
 ads: { sidebar_slots: [], in_article_slot: "" }
 permalink: /:categories/:title/
 feed: { path: feed.xml }
+baseurl: "/www.futebolando.github.io" # Deve ser o nome do seu repositório
