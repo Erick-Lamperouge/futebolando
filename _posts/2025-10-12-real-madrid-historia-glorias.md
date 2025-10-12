@@ -4,7 +4,7 @@ title: Real Madrid — história, títulos e por que segue dominante
 description: Uma visão rápida da história do Real Madrid, seus maiores títulos e os fatores que explicam sua dominância no futebol europeu.
 category: Espanha
 tags: [real madrid, champions league, la liga, futebol europeu]
-cover: /assets/img/posts/real-madrid/cover.jpg
+cover: /assets/img/posts/real-madrid/cover.png
 ---
 
 O **Real Madrid** é um dos clubes mais vitoriosos do mundo. Entre seus feitos,

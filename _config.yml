@@ -6,16 +6,28 @@ adsense_client_id: ""
 ads: { sidebar_slots: [], in_article_slot: "" }
 permalink: /:categories/:title/
 feed: { path: feed.xml }
-# SEO base
+
+# URLs corretas para Pages de PROJETO
 url: "https://erick-lamperouge.github.io"
 baseurl: "/futebolando"
 
-# Verificação Search Console (cole o token aqui quando gerar)
-google_site_verification: ""
-
-# Config do HERO (imagem fica no PRÓPRIO blog)
+# Hero (a imagem fica no próprio blog)
 hero:
-  image: /assets/img/hero-futebol.jpg   # coloque essa imagem no caminho abaixo
+  image: /assets/img/hero-futebol.png
   title: Futebolando
   subtitle: Notícias, história e análises
   height: 55vh
+
+# (vamos preencher depois)
+google_site_verification: ""
+
+# (confira que já tem)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# tema remoto: se você criou a tag v0.1.1, use ela:
+# remote_theme: Erick-Lamperouge/estrutura-dos-blogs@v0.1.1
+
