@@ -1,1 +1,1 @@
-Veja o README no chat para instruções.
+# Blog consumidor (starter)
