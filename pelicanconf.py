@@ -8,6 +8,7 @@ DEFAULT_LANG = 'pt'
 
 DEFAULT_PAGINATION = 10
 
+THEME_TEMPLATES_OVERRIDES = ['overrides']
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}.html'
 
