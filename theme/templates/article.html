@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
+{% block content %}
+<article class="post">
+  <h1>{{ article.title }}</h1>
+  <p class="meta">{{ article.locale_date }} • {{ article.category }}
+    {% if article.tags %} • Tags: 
+      {% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+    {% endif %}
+  </p>
+
+  <div class="content">
+    {{ article.content }}
+  </div>
+</article>
+{% endblock %}

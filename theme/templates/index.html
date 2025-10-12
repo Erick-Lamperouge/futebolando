@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} — {{ SITESUBTITLE }}{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>{{ SITENAME }}</h1>
+  {% if SITESUBTITLE %}<p class="sub">{{ SITESUBTITLE }}</p>{% endif %}
+</section>
+<section class="grid">
+  {% for article in articles_page.object_list %}
+    <article class="card">
+      <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+      <p class="meta">{{ article.locale_date }} • {{ article.category }}</p>
+      <p>{{ article.summary|striptags|truncate(200) }}</p>
+      <a class="read" href="{{ SITEURL }}/{{ article.url }}">Ler</a>
+    </article>
+  {% endfor %}
+</section>
+<div class="pagination">
+  {% if articles_page.has_previous() %}
+    <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&larr; Anteriores</a>
+  {% endif %}
+  {% if articles_page.has_next() %}
+    <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Mais &rarr;</a>
+  {% endif %}
+</div>
+{% endblock %}

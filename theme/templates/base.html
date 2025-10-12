@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ SITENAME }}{% if SITESUBTITLE %} — {{ SITESUBTITLE }}{% endif %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/main.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+      <nav class="nav">
+        <a href="{{ SITEURL }}/">Início</a>
+        <a href="{{ SITEURL }}/archives.html">Arquivo</a>
+        <a href="{{ SITEURL }}/categories.html">Categorias</a>
+        <a href="{{ SITEURL }}/tags.html">Tags</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© {{ now().year }} {{ SITENAME }} — gerado com Pelican</p>
+    </div>
+  </footer>
+</body>
+</html>
