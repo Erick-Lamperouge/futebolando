@@ -1,7 +1,7 @@
 title: Blog Exemplo 2
 description: "Notas e artigos."
 plugins: [jekyll-feed, jekyll-sitemap]
-remote_theme: USER/estrutura-dos-blogs@main
+remote_theme: remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
 adsense_client_id: ""
 ads: { sidebar_slots: [], in_article_slot: "" }
 permalink: /:categories/:title/
