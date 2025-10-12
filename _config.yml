@@ -6,3 +6,16 @@ adsense_client_id: ""
 ads: { sidebar_slots: [], in_article_slot: "" }
 permalink: /:categories/:title/
 feed: { path: feed.xml }
+# SEO base
+url: "https://erick-lamperouge.github.io"
+baseurl: "/futebolando"
+
+# Verificação Search Console (cole o token aqui quando gerar)
+google_site_verification: ""
+
+# Config do HERO (imagem fica no PRÓPRIO blog)
+hero:
+  image: /assets/img/hero-futebol.jpg   # coloque essa imagem no caminho abaixo
+  title: Futebolando
+  subtitle: Notícias, história e análises
+  height: 55vh
