@@ -1,4 +1,4 @@
-title: Blog Exemplo
+title: Blog Exemplo 2
 description: "Notas e artigos."
 plugins: [jekyll-remote-theme, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
 remote_theme: USER/estrutura-dos-blogs@main
