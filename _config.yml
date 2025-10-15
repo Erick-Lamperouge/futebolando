@@ -13,7 +13,7 @@ remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
 
 # hero opcional (se seu tema já tiver hero.html)
 hero:
-  image: /assets/img/hero-futebol.jpg
+  image: /assets/imgs/hero-futebol.jpg
   title: Futebolando
   subtitle: Notícias, história e análises
   height: 55vh
