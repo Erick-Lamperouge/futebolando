@@ -11,12 +11,27 @@ plugins:
 
 remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
 
-# hero opcional (se seu tema já tiver hero.html)
-hero:
-  image: /assets/imgs/hero-futebol.jpg
-  title: Futebolando
-  subtitle: Notícias, história e análises
-  height: 55vh
+colors:
+  # principais
+  brand:   "#1DD45F"   # título FUTEBOLANDO
+  primary: "#22C55E"   # botões/destaques
+  accent:  "#FBBF24"
+
+  # opcionais (sobrescrevem os padrões do tema)
+  fg: "#eaeef2"
+  bg: "#0c0f13"
+  muted: "#9aa3ae"
+  card: "#151a1f"
+  border: "#222a32"
+
+  # layout da topbar
+  edge_pad: "8px"      # deixa a marca mais encostada na esquerda
+  divider: "3px"       # espessura da linha de separação
+
+  # destaque do botão de busca
+  search_btn_bg: "#22C55E"
+  search_btn_fg: "#0B1015"
+
 
 # personalizações do blog
 about_url: "/sobre/"
