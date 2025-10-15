@@ -1,4 +1,4 @@
-title: Blog Exemplo 2
+title: Futebolando
 description: "Notas e artigos."
 plugins: [jekyll-feed, jekyll-sitemap]
 remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
