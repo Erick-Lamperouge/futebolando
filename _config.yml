@@ -26,7 +26,7 @@ colors:
 
   # layout da topbar
   edge_pad: "8px"      # deixa a marca mais encostada na esquerda
-  divider: "3px"       # espessura da linha de separação
+  divider: "8px"       # espessura da linha de separação
 
   # destaque do botão de busca
   search_btn_bg: "#22C55E"
