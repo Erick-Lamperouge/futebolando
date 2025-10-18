@@ -48,7 +48,7 @@ colors:
 #   title: "Faça parte da torcida"
 #   text: "Curte nosso conteúdo? Ajude a manter o projeto independente e sem paywall."
 #   cta:  "Apoiar agora"
-#   url:  "/sobre/"
+#   url:  "/sobre/" 
 
 footer_text: "Futebolando — O apito inicial da notícia é aqui. Não perca nenhum lance."
 
