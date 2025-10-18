@@ -32,6 +32,13 @@ colors:
   search_btn_bg: "#22C55E"
   search_btn_fg: "#0B1015"
 
+# Trocar conteúdo da janela de Suporte
+# support:
+#   title: "Faça parte da torcida"
+#   text: "Curte nosso conteúdo? Ajude a manter o projeto independente e sem paywall."
+#   cta:  "Apoiar agora"
+#   url:  "/sobre/"
+
 
 # personalizações do blog
 about_url: "/sobre/"
