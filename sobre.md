@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Sobre
+layout: about
+title: Sobre & Apoie
 permalink: /sobre/
+support_hide: true
 ---
-Olá! Aqui vai a descrição do projeto e como apoiar.

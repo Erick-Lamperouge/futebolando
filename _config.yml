@@ -55,6 +55,9 @@ footer_text: "Futebolando — O apito inicial da notícia é aqui. Não perca ne
 # personalizações do blog
 about_url: "/sobre/"
 
+about:
+  intro: "O Futebolando é um blog independente com análises, história e curiosidades do futebol — feito com carinho e sem paywall."
+
 # AdSense (opcional; se for usar laterais separadas)
 adsense_client_id: ""
 ads:
