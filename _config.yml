@@ -31,9 +31,20 @@ colors:
   # destaque do botão de busca
   search_btn_bg: "#22C55E"
   search_btn_fg: "#0B1015"
+  
+  # Altera o tamanho do título e a espessura da linha
+  #   brand_size: "34px"   # Aumenta o tamanho do título na topbar
+  #   divider: "4px"       # Engrossa a linha da topbar 
 
 # Trocar conteúdo da janela de Suporte
 # support:
+#   # cor principal/secundária do gradiente do card e do ícone
+#   color1: "#1DD45F"
+#   color2: "#22C55E"
+#   # cores do botão do card
+#   cta_bg: "#22C55E"
+#   cta_fg: "#0B1015"
+#   # Textos da janela
 #   title: "Faça parte da torcida"
 #   text: "Curte nosso conteúdo? Ajude a manter o projeto independente e sem paywall."
 #   cta:  "Apoiar agora"
