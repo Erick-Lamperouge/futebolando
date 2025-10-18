@@ -50,7 +50,7 @@ colors:
 #   cta:  "Apoiar agora"
 #   url:  "/sobre/"
 
-footer_text: "Futebolando — O apito inicial da notícia é aqui. Não perca nenhum lance."
+footer_text: "O apito inicial da notícia é aqui. Não perca nenhum lance."
 
 # personalizações do blog
 about_url: "/sobre/"
