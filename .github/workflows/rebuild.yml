@@ -1,9 +1,9 @@
-name: Rebuild (pull remote_theme updates)
+name: Rebuild (manual ou via API)
 
 on:
-  schedule:
-    - cron: "0 * * * *"   # a cada hora
-  workflow_dispatch:
+  workflow_dispatch:        # botão "Run workflow" na aba Actions
+  repository_dispatch:      # (opcional) seu Agente pode disparar por API
+    types: [rebuild]
 
 permissions:
   contents: write
@@ -21,13 +21,12 @@ jobs:
         run: |
           set -euxo pipefail
           date -u +"%Y-%m-%dT%H:%M:%SZ" > .rebuild-timestamp
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git add .rebuild-timestamp
           if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
+            echo "No changes to commit"; exit 0
           fi
           git commit -m "chore(rebuild): trigger Pages build [skip ci]"
           git push
