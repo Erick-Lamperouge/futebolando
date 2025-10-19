@@ -1,0 +1,73 @@
+name: Build & Deploy (Jekyll 4.x)
+
+on:
+  workflow_dispatch:      # executa quando você quiser
+  repository_dispatch:    # opcional: seu Agente pode disparar via API
+    types: [rebuild]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blog
+        uses: actions/checkout@v4
+
+      # Checkout do TEMA para copiar _data centralizado
+      - name: Checkout theme (estrutura-dos-blogs)
+        uses: actions/checkout@v4
+        with:
+          repository: Erick-Lamperouge/estrutura-dos-blogs
+          ref: main
+          path: .theme
+
+      # Copia _data do tema para o blog (centralização real)
+      - name: Sync theme _data into site
+        run: |
+          mkdir -p _data
+          if [ -d ".theme/_data" ]; then
+            rsync -a --delete .theme/_data/ _data/
+          fi
+          # (opcional) copiar imagens padrões do tema, se quiser:
+          mkdir -p assets/img/support
+          if [ -d ".theme/assets/img/support" ]; then
+            rsync -a .theme/assets/img/support/ assets/img/support/
+          fi
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install gems
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --trace
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
