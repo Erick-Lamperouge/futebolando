@@ -11,5 +11,5 @@ permalink: /posts.json
    "category": {{ p.category | jsonify }},
    "excerpt": {{ p.excerpt | strip_html | jsonify }}}
   {% unless forloop.last %},{% endunless %}
-{% endfor %}
+{% endfor %} 
 ]
