@@ -6,7 +6,7 @@ baseurl: "/futebolando"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
-  - jekyll-seo-tag 
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
