@@ -1,14 +1,21 @@
 name: Build & Deploy (Jekyll 4.x)
 
 on:
-  workflow_dispatch:      # executa quando você quiser
-  repository_dispatch:    # opcional: seu Agente pode disparar via API
-    types: [rebuild]
+  push:                       # roda a cada commit no blog
+    branches: [ main ]
+    # opcional: ignore mudanças irrelevantes
+    paths-ignore:
+      - "README.md"
+      - ".github/**"
+  workflow_dispatch:          # rodar manualmente quando quiser
+  repository_dispatch:        # receber disparos do TEMA
+    types: [rebuild, theme_update]
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
 
 concurrency:
   group: "pages"

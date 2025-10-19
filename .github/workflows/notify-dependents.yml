@@ -1,0 +1,17 @@
+name: Notify dependents (theme updated)
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  ping-blogs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger blog rebuild (futebolando)
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.BLOGS_PAT }}" \
+            https://api.github.com/repos/Erick-Lamperouge/futebolando/dispatches \
+            -d '{"event_type":"theme_update","client_payload":{"theme_sha":"${{ github.sha }}"}}'
