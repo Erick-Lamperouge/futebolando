@@ -6,7 +6,7 @@ on:
     types: [rebuild]
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   poke:
