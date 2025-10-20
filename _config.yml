@@ -60,7 +60,7 @@ about:
   intro: "O Futebolando é um blog independente com análises, história e curiosidades do futebol — feito com carinho para você."
 
 # AdSense (opcional; se for usar laterais separadas)
-adsense_client_id: "" 
+adsense_client_id: ""
 ads:
   left_slots:  []
   right_slots: []
