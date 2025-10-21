@@ -54,7 +54,7 @@ colors:
 footer_text: "O apito inicial da notícia é aqui. Não perca nenhum lance."
 
 # personalizações do blog
-about_url: "/sobre/"
+about_url: "/sobre/" 
 
 about:
   intro: "O Futebolando é um blog independente com análises, veracidade, história e curiosidades do futebol — feito com carinho para você."
