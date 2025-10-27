@@ -9,10 +9,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed 
 
-analytics:
-  provider: ga4
-  id: G-4SB22TGJ5X   # Measurement ID do GA4
-
 remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
 
 colors:
@@ -61,14 +57,6 @@ about_url: "/sobre/"
 
 about:
   intro: "O Futebolando é um blog independente com análises, veracidade, história e curiosidades do futebol — feito com carinho para você."
-
-# AdSense (opcional; se for usar laterais separadas)
-adsense_client_id: "ca-pub-XXXXXXXXXXXXXXXX"
-ads:
-  in_article_slot: "1234567890"
-  left_slots:    ["1111111111"]
-  right_slots:   ["2222222222"]
-  sidebar_slots: ["3333333333"]
 
 # Identificação do google
 google_site_verification: "foR2D8DC8lDPCWrQeoVWjxLHIK0IX7aSjqAM32j4Zgc"
