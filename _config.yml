@@ -9,6 +9,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed 
 
+analytics:
+  provider: ga4
+  id: G-4SB22TGJ5X   # Measurement ID do GA4
 
 remote_theme: Erick-Lamperouge/estrutura-dos-blogs@main
 
