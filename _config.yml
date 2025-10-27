@@ -63,10 +63,12 @@ about:
   intro: "O Futebolando é um blog independente com análises, veracidade, história e curiosidades do futebol — feito com carinho para você."
 
 # AdSense (opcional; se for usar laterais separadas)
-adsense_client_id: ""
+adsense_client_id: "ca-pub-XXXXXXXXXXXXXXXX"
 ads:
-  left_slots:  []
-  right_slots: []
+  in_article_slot: "1234567890"
+  left_slots:    ["1111111111"]
+  right_slots:   ["2222222222"]
+  sidebar_slots: ["3333333333"]
 
 # (vamos preencher depois)
 google_site_verification: "7AZZVEFZdDaXRTlp_ir4ojjlren-rtHehx7L-yGtO9M"
