@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 1,
+  "slug": "futebolando",
+  "name": "Futebolando",
+  "description": "Futebol além do placar: notícias, contexto, história e análise.",
+  "tagline": "O apito inicial da notícia é aqui.",
+  "language": "pt-BR",
+  "status": "draft",
+  "theme": {
+    "background": "#0C0F13",
+    "surface": "#151A1F",
+    "text": "#EAEEF2",
+    "muted": "#9AA3AE",
+    "primary": "#22C55E",
+    "accent": "#FBBF24",
+    "border": "#303944"
+  },
+  "categories": [
+    {
+      "slug": "noticias",
+      "label": "Notícias"
+    },
+    {
+      "slug": "analises",
+      "label": "Análises"
+    },
+    {
+      "slug": "historia",
+      "label": "História"
+    },
+    {
+      "slug": "regras",
+      "label": "Regras"
+    },
+    {
+      "slug": "futebol-brasileiro",
+      "label": "Futebol brasileiro"
+    },
+    {
+      "slug": "futebol-internacional",
+      "label": "Futebol internacional"
+    },
+    {
+      "slug": "competicoes",
+      "label": "Competições"
+    },
+    {
+      "slug": "clubes",
+      "label": "Clubes"
+    },
+    {
+      "slug": "estatisticas",
+      "label": "Estatísticas"
+    },
+    {
+      "slug": "projecoes",
+      "label": "Projeções esportivas"
+    },
+    {
+      "slug": "opiniao",
+      "label": "Opinião"
+    },
+    {
+      "slug": "gestao",
+      "label": "Gestão dos clubes"
+    }
+  ],
+  "editorial": {
+    "voice": "Portal híbrido de leitura agradável, natural e contínua: curioso, direto e explicativo, com exemplos concretos, análise sem sensacionalismo e transições que conectam ideias; precisão técnica sem jargão desnecessário.",
+    "audience": "Quem gosta de futebol e quer compreender o jogo além do resultado.",
+    "formats": [
+      "noticia",
+      "analise",
+      "guia",
+      "historia",
+      "opiniao",
+      "estatistica",
+      "projecao"
+    ],
+    "review": "human_required",
+    "opinion": "approved_only",
+    "requireSources": true,
+    "allowAutomaticPublishing": false,
+    "initialResearchWindows": [
+      "06:00",
+      "12:30",
+      "17:00",
+      "23:00"
+    ],
+    "timeZone": "America/Fortaleza",
+    "mode": "hybrid",
+    "betting": false,
+    "forecasts": "sporting_analysis_only"
+  },
+  "monetization": {
+    "adsense": {
+      "planned": true,
+      "enabled": false
+    },
+    "affiliates": {
+      "planned": true,
+      "enabled": false
+    },
+    "products": {
+      "planned": true,
+      "enabled": false
+    },
+    "donations": {
+      "pix": {
+        "planned": true,
+        "enabled": false
+      },
+      "crypto": {
+        "planned": true,
+        "enabled": false
+      }
+    },
+    "sponsorship": false
+  },
+  "preview": {
+    "featured": {
+      "category": "Análises",
+      "title": "O futebol além dos 90 minutos",
+      "summary": "Um espaço para entender as ideias, a história e as decisões por trás do jogo."
+    },
+    "cards": [
+      {
+        "category": "Regras",
+        "title": "Impedimento: a regra explicada com exemplos práticos"
+      },
+      {
+        "category": "Competições",
+        "title": "Libertadores: história e formato da competição"
+      },
+      {
+        "category": "Análises",
+        "title": "Barcelona: jogo posicional e evolução"
+      }
+    ]
+  },
+  "international": {
+    "defaultLocale": "pt-BR",
+    "editions": [
+      {
+        "locale": "pt-BR",
+        "path": "",
+        "label": "Português",
+        "ui": {
+          "skip": "Pular para o conteúdo",
+          "notice": "Prévia de desenvolvimento · nenhum anúncio ativo",
+          "navigation": "Navegação da prévia",
+          "home": "Início",
+          "categories": "Editorias",
+          "pitches": "Pautas",
+          "content": "conteudo",
+          "advertising": "Espaço reservado · publicidade",
+          "proposal": "proposta editorial",
+          "preparation": "Pautas em preparação",
+          "filter": "Filtrar pautas desta prévia",
+          "placeholder": "Digite um tema...",
+          "draft": "Prévia · ainda não publicada",
+          "complementary": "Espaços complementares",
+          "about": "Sobre o blog",
+          "products": "Guias e produtos",
+          "productDescription": "Espaço futuro para materiais próprios e recomendações identificadas.",
+          "footer": "Rede de Blogs Senhorita Minuto · Protótipo",
+          "count": "pauta(s) encontrada(s).",
+          "language": "Idioma",
+          "preview": "prévia"
+        }
+      },
+      {
+        "locale": "en",
+        "path": "en",
+        "label": "English",
+        "ui": {
+          "skip": "Skip to content",
+          "notice": "Development preview · no active ads",
+          "navigation": "Preview navigation",
+          "home": "Home",
+          "categories": "Sections",
+          "pitches": "Stories",
+          "content": "content",
+          "advertising": "Reserved advertising space",
+          "proposal": "editorial concept",
+          "preparation": "Stories in preparation",
+          "filter": "Filter preview stories",
+          "placeholder": "Enter a topic...",
+          "draft": "Preview · not yet published",
+          "complementary": "Additional sections",
+          "about": "About this blog",
+          "products": "Guides and products",
+          "productDescription": "Reserved for future original publications and disclosed recommendations.",
+          "footer": "Senhorita Minuto Blog Network · Prototype",
+          "count": "story/stories found.",
+          "language": "Language",
+          "preview": "preview"
+        },
+        "copy": {
+          "description": "Football beyond the score: news, context, history and analysis.",
+          "tagline": "The story kicks off here.",
+          "categories": [
+            "News",
+            "Analysis",
+            "History",
+            "Rules",
+            "Brazilian football",
+            "International football",
+            "Competitions",
+            "Clubs",
+            "Statistics",
+            "Sporting forecasts",
+            "Opinion",
+            "Club management"
+          ],
+          "featured": {
+            "category": "Analysis",
+            "title": "Football beyond the 90 minutes",
+            "summary": "Understand the ideas, history and decisions behind the game."
+          },
+          "cards": [
+            {
+              "category": "Rules",
+              "title": "Offside: the rule explained with practical examples"
+            },
+            {
+              "category": "Competitions",
+              "title": "Copa Libertadores: history and competition format"
+            },
+            {
+              "category": "Analysis",
+              "title": "Barcelona: positional play and evolution"
+            }
+          ]
+        }
+      }
+    ],
+    "candidateLocales": [
+      "es",
+      "pt-PT"
+    ],
+    "audience": {
+      "scope": "global",
+      "jurisdiction": null,
+      "seedMarkets": [
+        "BR",
+        "GB",
+        "ES",
+        "PT",
+        "DE",
+        "FR",
+        "IT"
+      ],
+      "watchMarkets": [
+        "CN"
+      ],
+      "seedTopics": [
+        "champions-league",
+        "premier-league",
+        "la-liga",
+        "liga-portugal",
+        "serie-a-italia",
+        "bundesliga",
+        "ligue-1",
+        "brasileirao",
+        "libertadores",
+        "real-madrid",
+        "barcelona",
+        "liverpool",
+        "manchester-city",
+        "bayern-munich",
+        "benfica",
+        "porto",
+        "sporting",
+        "psg",
+        "inter",
+        "juventus",
+        "flamengo",
+        "palmeiras",
+        "international-football"
+      ],
+      "expansion": "evidence_driven",
+      "allocation": {
+        "core": 50,
+        "demand": 35,
+        "exploration": 15
+      },
+      "minObservedImpressions": 100,
+      "minSources": 1
+    },
+    "payments": {
+      "activated": false,
+      "markets": [
+        {
+          "market": "BR",
+          "currency": "BRL",
+          "candidates": [
+            "pix",
+            "boleto",
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "default",
+          "currency": null,
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "PT",
+          "currency": "EUR",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "ES",
+          "currency": "EUR",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "DE",
+          "currency": "EUR",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "FR",
+          "currency": "EUR",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "IT",
+          "currency": "EUR",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "GB",
+          "currency": "GBP",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "US",
+          "currency": "USD",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        },
+        {
+          "market": "TH",
+          "currency": "THB",
+          "candidates": [
+            "card",
+            "crypto"
+          ]
+        }
+      ]
+    }
+  },
+  "design": {
+    "version": 1,
+    "motif": "pitch",
+    "mainCategories": [
+      "noticias",
+      "analises",
+      "competicoes",
+      "clubes",
+      "estatisticas",
+      "projecoes",
+      "historia"
+    ],
+    "cardCategories": [
+      "regras",
+      "competicoes",
+      "analises"
+    ],
+    "featureCategory": "analises",
+    "copy": {
+      "pt-BR": {
+        "edition": "EDIÇÃO DIGITAL",
+        "search": "Buscar no blog",
+        "all": "Todas",
+        "topics": "Explore as editorias",
+        "featured": "Em destaque",
+        "stories": "Em preparação",
+        "filter": "Buscar por assunto ou título",
+        "empty": "Nenhuma pauta corresponde à pesquisa.",
+        "clear": "Limpar filtros",
+        "method": "Nosso compromisso editorial",
+        "methodText": "Contexto, fontes verificáveis e análise responsável. Opiniões são identificadas e passam por revisão.",
+        "illustration": "Ilustração editorial",
+        "ad": "Área reservada · publicidade desativada",
+        "draft": "Pauta demonstrativa",
+        "return": "Voltar ao início",
+        "guide": "Materiais e guias",
+        "guideText": "Futuros materiais autorais e recomendações identificadas.",
+        "about": "Sobre esta publicação",
+        "network": "Rede de Blogs Senhorita Minuto",
+        "appearance": "Aparência",
+        "system": "Sistema",
+        "light": "Claro",
+        "dark": "Escuro",
+        "photo": "Fotografia",
+        "chart": "Gráfico",
+        "mediaCredit": "Crédito",
+        "readArticle": "Ler matéria",
+        "readDraft": "Ler prévia",
+        "articleDraft": "Artigo em revisão · ainda não publicado",
+        "contents": "Nesta matéria",
+        "sources": "Fontes e referências",
+        "related": "Leituras relacionadas",
+        "prepared": "Preparado em",
+        "updated": "Revisado em",
+        "backHome": "Voltar ao blog",
+        "noReview": "Revisão humana pendente",
+        "reading": "min de leitura",
+        "fontLicenses": "Licenças tipográficas"
+      },
+      "en": {
+        "edition": "DIGITAL EDITION",
+        "search": "Search the blog",
+        "all": "All",
+        "topics": "Explore the sections",
+        "featured": "Featured",
+        "stories": "In preparation",
+        "filter": "Search by topic or title",
+        "empty": "No stories match your search.",
+        "clear": "Clear filters",
+        "method": "Our editorial commitment",
+        "methodText": "Context, verifiable sources and responsible analysis. Opinions are identified and reviewed.",
+        "illustration": "Editorial illustration",
+        "ad": "Reserved space · advertising disabled",
+        "draft": "Sample editorial pitch",
+        "return": "Back to top",
+        "guide": "Guides and resources",
+        "guideText": "Future original guides and disclosed recommendations.",
+        "about": "About this publication",
+        "network": "Senhorita Minuto Blog Network",
+        "appearance": "Appearance",
+        "system": "System",
+        "light": "Light",
+        "dark": "Dark",
+        "photo": "Photograph",
+        "chart": "Chart",
+        "mediaCredit": "Credit",
+        "readArticle": "Read article",
+        "readDraft": "Read preview",
+        "articleDraft": "Article under review · not published",
+        "contents": "In this article",
+        "sources": "Sources and references",
+        "related": "Related reading",
+        "prepared": "Prepared on",
+        "updated": "Reviewed on",
+        "backHome": "Back to blog",
+        "noReview": "Human review pending",
+        "reading": "min read",
+        "fontLicenses": "Font licenses"
+      }
+    },
+    "appearance": {
+      "default": "system",
+      "light": {
+        "background": "#F9FAF7",
+        "surface": "#FFFFFF",
+        "text": "#17221C",
+        "muted": "#52605A",
+        "primary": "#126B37",
+        "accent": "#805400",
+        "border": "#CED7D0"
+      }
+    },
+    "density": "minimal",
+    "mediaPolicy": "mixed",
+    "media": {
+      "featured": {
+        "kind": "illustration",
+        "source": "builtin"
+      },
+      "cards": [
+        {
+          "kind": "illustration",
+          "source": "local",
+          "path": "/futebolando/media/offside-schematic.svg",
+          "rights": "original",
+          "credit": "Futebolando",
+          "alt": {
+            "pt-BR": "Diagrama esquemático de um campo com linha defensiva e posições de jogadores, sem representar uma partida real.",
+            "en": "Schematic pitch with a defensive line and player positions, not depicting an actual match."
+          }
+        },
+        null,
+        null
+      ]
+    },
+    "refinement": {
+      "typography": "hybrid",
+      "navigation": "circular",
+      "action": "editorial",
+      "palette": "emerald",
+      "motion": "subtle",
+      "minTarget": 44
+    },
+    "articleMedia": [
+      {
+        "kind": "illustration",
+        "source": "local",
+        "path": "/futebolando/media/ball-line-schematic.svg",
+        "rights": "original",
+        "credit": "Futebolando",
+        "alt": {
+          "pt-BR": "Dois exemplos vistos de cima: uma bola ainda sobre a linha e outra inteiramente fora do campo.",
+          "en": "Two overhead examples: a ball still overlapping the line and another entirely outside the field."
+        }
+      },
+      {
+        "kind": "illustration",
+        "source": "local",
+        "path": "/futebolando/media/goalkeeper-clock-schematic.svg",
+        "rights": "original",
+        "credit": "Futebolando",
+        "alt": {
+          "pt-BR": "Esquema temporal de oito segundos, com destaque para os cinco últimos segundos da contagem visual.",
+          "en": "Eight-second timeline highlighting the final five seconds of the referee’s visible countdown."
+        }
+      },
+      {
+        "kind": "illustration",
+        "source": "local",
+        "path": "/futebolando/media/real-madrid-timeline.svg",
+        "rights": "original",
+        "credit": "Futebolando",
+        "alt": {
+          "pt-BR": "Linha do tempo dos títulos europeus do Real Madrid: cinco de 1956 a 1960, títulos em 1966 e 1998 e três entre 2016 e 2018; seleção de marcos, não lista completa.",
+          "en": "Selected milestones in Real Madrid's European Cup history: five from 1956 to 1960, titles in 1966 and 1998 and three from 2016 to 2018. Not a complete list."
+        }
+      },
+      {
+        "kind": "illustration",
+        "source": "local",
+        "path": "/futebolando/media/libertadores-format-2026.svg",
+        "rights": "original",
+        "credit": "Futebolando",
+        "alt": {
+          "pt-BR": "Fluxo da Libertadores 2026: 32 equipes, oito grupos de quatro, 16 classificadas às oitavas, oito às quartas, quatro às semifinais, duas à final.",
+          "en": "2026 Libertadores format: 32 teams, eight groups of four, 16 in the round of 16, eight in the quarter-finals, four in the semi-finals and two finalists."
+        }
+      },
+      {
+        "kind": "illustration",
+        "source": "local",
+        "path": "/futebolando/media/positional-play-schematic.svg",
+        "rights": "original",
+        "credit": "Futebolando",
+        "alt": {
+          "pt-BR": "Campo esquemático com jogadores distribuídos em largura e profundidade e uma combinação de terceiro homem; exemplo hipotético, não reconstrução de uma partida.",
+          "en": "Schematic pitch showing players spread across width and depth and a third-player combination; hypothetical example, not a reconstruction of a match."
+        }
+      },
+      {
+        "kind": "chart",
+        "source": "local",
+        "path": "/futebolando/media/xg-example.svg",
+        "rights": "original",
+        "credit": "Futebolando",
+        "alt": {
+          "pt-BR": "Exemplo fictício: equipe A, seis finalizações de 0,05 xG, total 0,30; equipe B, duas finalizações de 0,35 e 0,25 xG, total 0,60.",
+          "en": "Hypothetical example: team A, six shots worth 0.05 xG each, total 0.30; team B, two shots worth 0.35 and 0.25 xG, total 0.60."
+        }
+      }
+    ]
+  }
+}
